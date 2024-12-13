@@ -1,4 +1,5 @@
 inline static uintptr_t gworld = 0x170D9D88;
+inline static uintptr_t gnames = 0x17b01480;
 inline static uintptr_t local_pawn = 0x350;
 inline static uintptr_t player_controller = 0x30;
 inline static uintptr_t local_players = 0x38;
