@@ -25,7 +25,6 @@ inline static uintptr_t current_weapon = 0xa80;
 inline static uintptr_t weapon_data = 0x6a0;   // 548
 inline static uintptr_t b_has_thanked_bus_driver = 0x13b5;
 inline static uintptr_t kill_score = 0x1274; 
-inline static uintptr_t season_level_ui_display = 0x1250;
 inline static uintptr_t NetworkManager = 0x68; 
 inline static uintptr_t PersistentLevel = 0x40; 
 inline static uintptr_t NetDriver = 0x48; 
