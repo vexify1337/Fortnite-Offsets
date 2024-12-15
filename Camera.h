@@ -1,8 +1,8 @@
 _SCamera get_view_point()
 {
 	_SCamera view_point{};
-	uintptr_t loc = Kernel.Read<uintptr_t>(cached::gworld + 0x130); //
-	uintptr_t rott = Kernel.Read<uintptr_t>(cached::gworld + 0x140); //
+	uintptr_t loc = Kernel.Read<uintptr_t>(cached::gworld + 0x130); 
+	uintptr_t rott = Kernel.Read<uintptr_t>(cached::gworld + 0x140); 
 	FNRot fnrot{};
 	fnrot.a = Kernel.Read<double>(rott);
 	fnrot.b = Kernel.Read<double>(rott + 0x20);
