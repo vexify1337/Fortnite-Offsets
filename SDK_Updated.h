@@ -7,7 +7,7 @@ namespace fnsdk {
 bool VisiCheck(uintptr_t cached_mesh)
 	{
 		auto Mili = Kernel.Read<double>(cached::gworld + 0x150);
-		auto LastRenderTime = Kernel.Read<float>(cached_mesh + offsets::LastRenderTime); // 0x 0x30C
+		auto LastRenderTime = Kernel.Read<float>(cached_mesh + offsets::LastRenderTime); // 0x30C
 		return Mili - LastRenderTime <= 0.06f;
 	}
 }
