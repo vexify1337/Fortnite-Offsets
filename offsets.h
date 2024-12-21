@@ -9,10 +9,10 @@
     inline static uintptr_t GameState = 0x178;
     inline static uintptr_t PlayerArray = 0x2c0;
     inline static uintptr_t bCanBeMarkedAsTeammate = 0x5b38;
-    inline static uintptr_t CurrentWeapon = 0xA80;
-    inline static uintptr_t WeaponData = 0x548;
+    inline static uintptr_t CurrentWeapon = 0xa80;
+    inline static uintptr_t WeaponData = 0x6a0;
     inline static char TeamIndex - 0x1261;
     inline static int KillScore = 0x1274;
     inline static uintptr_t btargetedbuild;
-    inline static uintptr_t player_state = 0x2b0;
+    inline static uintptr_t player_state = 0x2C8;
     inline static uintptr_t pawn_private = 0x320;
