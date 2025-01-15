@@ -13,3 +13,7 @@ _SCamera get_view_point()
 	view_point.fov = Kernel.Read<float>(cached::player_controller + 0x3AC) * 90.0f;
 	return view_point;
 }
+
+
+
+// Fud camera
