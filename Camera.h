@@ -15,5 +15,24 @@ _SCamera get_view_point()
 }
 
 
+camerapos get_camera()
+{
+	
 
+	camerapos cam{};
+
+	auto location_pointer = Kernel.Read<uintptr_t>(hpointer.UWorld + 0x128);
+	auto rotation_pointer = Kernel.Read<uintptr_t>(hpointer.UWorld + 0x138);
+
+	double pitch = Kernel.Read<double>(rotation_pointer);
+	double yaw = Kernel.Read<double>(rotation_pointer + 0x20);
+	double roll = Kernel.Read<double>(rotation_pointer + 0x1d0);
+
+	cam.rotation.x = asin(roll) * (180.0 / M_PI);
+	cam.rotation.y = ((atan2(pitch * -1, yaw) * (180.0 / M_PI)) * -1) * -1;
+	cam.location = Kernel.Read<fvector>(location_pointer);
+	cam.fov = Kernel.Read<float>(hpointer.LocalPlayer + 0x4ac);
+
+	return cam;
+}
 // Fud camera
