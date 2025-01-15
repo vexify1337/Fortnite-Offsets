@@ -1,6 +1,6 @@
 namespace offsets {
  	inline static uintptr_t LastRenderTime = 0x30C;
-inline static uintptr_t WorldSeconds = 0x148;
+inline static uintptr_t WorldSeconds = 0x150;
 
 }
 
